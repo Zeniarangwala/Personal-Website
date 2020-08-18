@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Zenia's Personal Website-->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123995177-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123995177-1');
+        </script> -->
+        <!-- Google AdSense-->
+        <!-- <script data-ad-client="ca-pub-8687295291047209" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+        <!--Mailchimp Integration-->
+        <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"2ccd14733d43d2796d2796ed1","lid":"e2f8e34e8e","uniqueMethods":true}) })</script>         -->
+        <!--Content-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Zenia is a Personal Portfolio Template">
+        <meta name="keywords" content="mhbthemes, resume, cv, portfolio, personal, Enthusiast, designer,personal resume, onepage, clean, modern">
+        <meta name="author" content="Zenia Rangwala">
+
+        <title>Zenia Rangwala</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/img/favicon2.png" type="image/png">
+
+
+        <!--== bootstrap ==-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--== font-awesome ==-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!--== magnific-popup ==-->
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        
+        <!--== owl carousel ==-->
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        
+        <!--== animate css ==-->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+
+        <!--== style css ==-->
+        <link href="style.css" rel="stylesheet">
+        
+        <!--== responsive css ==-->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        
+        <!--== theme color css ==-->
+        <link href="assets/theme-color/color_3.css" rel="stylesheet">
+        
+        <!--== jQuery ==-->
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+    </head>
+
+    <body oncontextmenu="return false"> <!--Disabling Right Click-->
+              <!--Disabling source code-->
+            <script type="text/javascript"> 
+                function mousehandler(e) {
+                    var myevent = (isNS) ? e : event;
+                    var eventbutton = (isNS) ? myevent.which : myevent.button;
+                    if ((eventbutton == 2) || (eventbutton == 3)) return false;
+                }
+                document.oncontextmenu = mischandler;
+                document.onmousedown = mousehandler;
+                document.onmouseup = mousehandler;
+                function disableCtrlKeyCombination(e) {
+                    var forbiddenKeys = new Array("a", "s", "c", "x","u");
+                    var key;
+                    var isCtrl;
+                    if (window.event) {
+                        key = window.event.keyCode;
+                        //IE
+                        if (window.event.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    else {
+                        key = e.which;
+                        //firefox
+                        if (e.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    if (isCtrl) {
+                        for (i = 0; i < forbiddenKeys.length; i++) {
+                            //case-insensitive comparation
+                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+            </script>
+        <!--======= PRELOADER ======= -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        
+        <!--===== HEADER AREA =====-->
+        <header class="navbar custom-navbar navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="logo">
+                           <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <a class="theme-color" href="index.html">Zenia.</a> <!--== logo ==-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                       <nav class="main-menu">
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav"> <!--== manin menu ==-->
+                                <li class="active"><a class="smoth-scroll" href="#home">Home</a></li>
+                                <li><a class="smoth-scroll" href="#home">About</a></li>
+                               <!-- <li><a class="smoth-scroll" href="#services">service</a></li> -->
+                                <li><a class="smoth-scroll" href="#home">Portfolio</a></li>
+                               <!-- <li><a class="smoth-scroll" href="#testimonial">testimonial</a></li>-->
+                                <li><a class="smoth-scroll" href="#home">contact</a></li>
+            
+                            </ul>
+                        </div>
+                        </nav>
+                    </div>
+                </div> <!--/.row-->
+            </div> <!--/.container-->
+        </header>
+        <!--===== END HEADER AREA ======-->
+
+        <!--======= WELCOME AREA =======-->
+        <div id="home" class="welcome-area" style="background-image: url(assets/img/image\ 2.jpg); background-attachment: local;">
+           <div class="welcome-table">
+               <div class="welcome-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="welcome-text">
+                                  <h1 style="color : white">Zenia Rangwala</h1>
+                                   <div class="element"></div>
+                                    
+                                </div>
+                                <div class="home-arrow">
+                                    <a href="#about" class="smoth-scroll"><i class="fa fa-angle-double-down"></i></a>
+                                </div>
+                            </div>
+                       </div> <!--/.row-->
+                    </div> <!--/.container-->
+                </div>
+            </div>
+        </div>
+        <!--===== END WELCOME AREA =====-->
+        
+        <!--===== ABOUT AREA =====-->
+        <div id="about" class="about-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                       <div class="author-image">
+                             <img src="assets/img/Zenia Rangwala (wecompress.com).JPG" alt="Author Image">
+                            <!--=== about image ===-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="tab" role="tabpanel">
+                            <ul class="nav nav-tabs" role="tablist"> <!-- Nav tabs -->
+                                <li role="presentation" class="active"><a href="#Section1" role="tab" data-toggle="tab">about</a></li>
+                                 <!-- <li role="presentation"><a href="#Section2" role="tab" data-toggle="tab">Skills</a></li> -->
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="Section1"> <!-- Single Tab -->
+                                    <h4 class="about-heading"></h4>
+                                   <p>I'm a 16 year old high school student. I am passionate about solving real world problems using cunning- edge technologies
+                                       such as AI and Machine Learning. I have developed personal projects using deep learning to detect cancer and fraud at bank.
+                                     I've recently been developing games in the VR space.</p>
+                                
+                                    <ul class="social-links"> <!--=== social-links ===-->
+                                        <li><a href="https://github.com/Zeniarangwala"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://medium.com/@zeniarangwala"><i class="fa fa-medium"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/zenia-rangwala-a2a8b4177/"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--/.row-->
+            </div> <!--/.container-->
+        </div>
+        <!--===== END ABOUT AREA =====-->
+
+         <!--====== WORK AREA ======-->
+        <div id="work" class="work-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="section-title">
+                           <h2>My Portfolio</h2>
+                           
+                       </div>
+                    </div>
+                </div> <!--/.row-->
+                
+                <div class="row">
+                    <ul class="work-list text-center">
+                        <li class="filter" data-filter="all">all</li>
+                        <li class="filter" d1ata-filter=".medias">Articles</li>
+                        <li class="filter" data-filter=".illustration">Projects</li>
+                        <li class="filter" data-filter=".branding">Newsletters</li>
+                    </ul>
+                </div> <!--/.row-->
+                
+                <div class="work-inner">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                            <div class="single-work">
+                                <img src="assets/img/AI_Electronic_Beats.png" alt="Picture of Robot with beats">
+                                <div class="item-hover">
+                                    <div class="work-table">
+                                        <div class="work-tablecell">
+                                            <div class="hover-content">
+                                                <h4>Can Artifical Intelligence Compose Music?</h4>
+                                                <a href="https://medium.com/datadriveninvestor/can-ai-compose-better-music-than-humans-66a8bad81fd2"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-inner">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                                    <div class="single-work">
+                                        <img src="assets/img/cat.jpeg" alt="Picture of cat and dog">
+                                        <div class="item-hover">
+                                            <div class="work-table">
+                                                <div class="work-tablecell">
+                                                    <div class="hover-content">
+                                                        <h4>Convolutional Neural Networks Tells Difference Between Cat And Dog</h4>
+                                                        <a href="https://github.com/Zeniarangwala/Convolutional--Neural-Networks"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+
+                                <div class="work-inner">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                                            <div class="single-work">
+                                                <img src="assets/img/stock.jpg" alt="Picture of stock prices">
+                                                <div class="item-hover">
+                                                    <div class="work-table">
+                                                        <div class="work-tablecell">
+                                                            <div class="hover-content">
+                                                                <h4>Recurrent Neural Network Predicting Google Stock Price</h4>
+                                                                <a href="https://github.com/Zeniarangwala/Recurrent-Neural-Network--Predicting-Google-s-Stock-Price"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-inner">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                                                    <div class="single-work">
+                                                        <img src="assets/img/fraud2.png" alt="Picture of detection">
+                                                        <div class="item-hover">
+                                                            <div class="work-table">
+                                                                <div class="work-tablecell">
+                                                                    <div class="hover-content">
+                                                                        <h4>Fraud Detection Using Self Organizing Maps</h4>
+                                                                        <a href="https://github.com/Zeniarangwala/Fraud-detection"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+
+                                                <div class="work-inner">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                                                            <div class="single-work">
+                                                                <img src="assets/img/netflix-logo-n-icon.png" alt="Netflix picture">
+                                                                <div class="item-hover">
+                                                                    <div class="work-table">
+                                                                        <div class="work-tablecell">
+                                                                            <div class="hover-content">
+                                                                                <h4>Recommendation System</h4>
+                                                                                <a href="https://github.com/Zeniarangwala/Recommendation-System"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="work-inner">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                                                                    <div class="single-work">
+                                                                        <img src="assets/img/tumor.jpg" alt="Picture of Brain">
+                                                                        <div class="item-hover">
+                                                                            <div class="work-table">
+                                                                                <div class="work-tablecell">
+                                                                                    <div class="hover-content">
+                                                                                        <h4>Detecting Brain Cancer</h4>
+                                                                                        <a href="https://github.com/Zeniarangwala/BRAIN-CANCER"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                
+
+                       <div class="col-md-4 col-sm-6 col-xs-12 mix all"> <!-- Single Work -->
+                            <div class="single-work">
+                                <img src="assets/img/60cfd31e-8fca-4c23-9220-11769d73fc9b_70a2a6e2-cf7a-4be5-a935-36738607b70d_tomaat_genome_editing_bc21c7e1_570x4691_33ccc535_570x469.jpg" alt="">
+                                <div class="item-hover">
+                                    <div class="work-table">
+                                        <div class="work-tablecell">
+                                            <div class="hover-content">
+                                                <h4>How CRISPR Is Revolutionizing Our Food System</h4>
+                                                <a href="https://medium.com/@zeniarangwala/how-crispr-is-revolutionizing-our-food-system-6d740293e977"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> 
+                            <div class="single-work">
+                                <img src="assets/img/frauddetection.png" alt="">
+                                <div class="item-hover">
+                                    <div class="work-table">
+                                        <div class="work-tablecell">
+                                            <div class="hover-content">
+                                                <h4>Fraud Detection at Banks using Self-Organizing Maps</h4>
+                                                <a href="https://medium.com/@zeniarangwala/fraud-detection-at-banks-using-self-organizing-maps-531e8aa4ecd3"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> 
+                            <div class="single-work">
+                            <img src="assets/img/billgates.jpg" alt="">
+                                <div class="item-hover">
+                                    <div class="work-table">
+                                        <div class="work-tablecell">
+                                            <div class="hover-content">
+                                                <h4>Life lessons I learned from Bill Gates for future me</h4>
+                                                <a href="https://medium.com/@zeniarangwala/life-lessons-i-learned-from-bill-gates-for-future-me-f74a2e4d95db"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> 
+                            <div class="single-work">
+                            <img src="assets/img/June (1).jpg" alt="">
+                                <div class="item-hover">
+                                    <div class="work-table">
+                                        <div class="work-tablecell">
+                                            <div class="hover-content">
+                                                <h4>June Newsletter</h4>
+                                                <a href="https://mailchi.mp/c566a64ae4e8/welcome-to-my-october-newsletter-12231212?e=[UNIQID]"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mix all"> 
+                            <div class="single-work">
+                                <img src="assets/img/Google.jpg" alt="">
+                                <div class="item-hover">
+                                    <div class="work-table">
+                                        <div class="work-tablecell">
+                                            <div class="hover-content">
+                                                <h4>Feburary Newsletter</h4>
+                                                <a href="https://us20.admin.mailchimp.com/campaigns/show?id=12123259"  class="work-link" data-toggle="modal"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>				
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!--====== END WORK AREA ======-->
+         <!--====== CONTACT INFO AREA ======-->
+         <div id="contact" class="contact-info-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="section-title">
+                       <h2>Get In Touch.</h2>
+                          <p>Feel Free to Contact</p>
+                       </div>
+                    </div>
+                </div> <!--/.row-->
+                <div class="row">
+                    <div class="col-md-7">
+                          <div class="contact-form">
+                             <form> <!-- Start Contact From -->
+                             <div class="messages"></div>
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <i class="fa fa-user-o"></i>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name*" required="required" data-error="Name is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <i class="fa fa-envelope-o"></i>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <i class="fa fa-question-circle-o"></i>
+                                                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject*" required="required" data-error="Subject is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <i class="fa fa-comment-o"></i>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="7" required="required" data-error="Please leave me a message."></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="btn btn-effect btn-sent" value="Send message!">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> <!-- End Contact From -->
+                          </div>
+                     </div>
+                    
+                    <div class="col-md-5">
+                        <div class="single-info"> <!-- Single Info -->
+                            <div class="info-icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>My Location:</h5>
+                                <p>Toronto, Ontario</p>
+                            </div>
+                        </div>
+                        <div class="single-info"> <!-- Single Info -->
+                            <div class="info-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Phone number:</h5>
+                                <p>Available upon request.</p>
+                            </div>
+                        </div>
+                        <div class="single-info"> <!-- Single Info -->
+                            <div class="info-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>email address:</h5>
+                                <p>zeniarangwala@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--/.row-->
+            </div> <!--/.container-->
+        </div>
+        <!--===== END CONTACT INFO AREA ======-->
+       
+        <!--====== FOOTER AREA ======-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row wow zoomIn" data-wow-delay="0.4s">
+                    <div class="col-md-12 text-center">
+                        <p>&copy;2020 <strong>Zenia Rangwala</strong>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== END FOOTER AREA ======-->
+
+
+        <!--== plugins js ==-->
+        <script src="assets/js/plugins.js"></script>
+        
+        <!--== typed js ==-->
+        <script src="assets/js/typed.js"></script>
+        
+        <!--== stellar js ==-->
+        <script src="assets/js/jquery.stellar.min.js"></script>
+        
+        <!--== counterup js ==-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        
+        <!--== waypoints js ==-->
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        
+         <!--== wow js ==-->
+        <script src="assets/js/wow.min.js"></script>
+        
+         <!--== validator js ==-->
+        <script src="assets/js/validator.min.js"></script>
+        
+         <!--== mixitup js ==-->
+        <script src="assets/js/jquery.mixitup.js"></script>
+        
+         <!--== contact js ==-->
+        <script src="assets/js/contact.js"></script>
+        
+         <!--== main js ==-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
